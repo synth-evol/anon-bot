@@ -5,6 +5,7 @@ go 1.21.5
 require (
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/gofiber/template/html/v2 v2.1.1
+	github.com/rs/zerolog v1.32.0
 )
 
 require (
