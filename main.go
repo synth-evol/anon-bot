@@ -34,7 +34,7 @@ func ProcessForm(c *fiber.Ctx) error {
 			"body":"Your tale was lost in the Astral Sea! Try again later!"
 		}`)
 	}
-	http.Post("anon-bot-messager:8000/", "application/json", bytes.NewBuffer(messageJson))
+	http.Post("http://anon-bot-messager:8000/", "application/json", bytes.NewBuffer(messageJson))
 	return c.Render("greeting", fiber.Map{"Greeting": confirmation})
 }
 
